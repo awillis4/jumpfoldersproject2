@@ -1,0 +1,48 @@
+Microsoft Windows [Version 10.0.18363.1440]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\User1>cd C:\Users\User1\Documents\work.will\cisc257\corejava\unixtest
+
+C:\Users\User1\Documents\work.will\cisc257\corejava\unixtest>mkdir parentDir
+
+C:\corejava\unixtest>mkdir chilDir
+
+C:\corejava\unixtest>cd C:\corejava\unixtest\chilDir
+
+C:\corejava\unixtest\chilDir>echo > "file1.txt
+
+C:\corejava\unixtest\chilDir>echo>"file2.txt"
+
+C:\corejava\unixtest\chilDir>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 8496-6EDF
+
+ Directory of C:\corejava\unixtest\chilDir
+
+07/19/2021  08:49 PM    <DIR>          .
+07/19/2021  08:49 PM    <DIR>          ..
+07/19/2021  08:49 PM                13 file1.txt
+07/19/2021  08:49 PM                13 file2.txt
+               2 File(s)             26 bytes
+               2 Dir(s)  18,215,514,112 bytes free
+
+C:\corejava\unixtest\chilDir>cd C:\corejava\unixtest
+
+C:\corejava\unixtest>cd C:\corejava\unixtest\chilDir
+
+C:\corejava\unixtest\chilDir>cd C:corejava\unixtest\parentDir
+
+C:\corejava\unixtest\parentDir>echo>"yourname.txt"
+
+C:\corejava\unixtest\parentDir>rename C:\corejava\unixtest\parentDir
+The syntax of the command is incorrect.
+
+C:\corejava\unixtest\parentDir>rename C:\corejava\unixtest\parentDir\yourname.txt myname.txt
+
+C:\corejava\unixtest\parentDir>rd /s C:\corejava\unixtest\parentDir
+C:\corejava\unixtest\parentDir, Are you sure (Y/N)? y
+The process cannot access the file because it is being used by another process.
+
+C:\corejava\unixtest\parentDir>echo>"myname.txt User1:w
+
+C:\corejava\unixtest\parentDir>
